@@ -1,0 +1,11 @@
+# Videodateien und Zwischenstände nicht ins Repo
+projekte/*/raw/
+projekte/*/voice/
+projekte/*/music/
+projekte/*/work/
+projekte/*/out/*.mp4
+*.mov
+*.MOV
+*.mp4
+*.m4a
+*.wav
