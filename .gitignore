@@ -2,7 +2,10 @@
 projekte/*/raw/
 projekte/*/voice/
 projekte/*/music/
-projekte/*/work/
+projekte/*/work/*
+!projekte/*/work/edl_*.json
+!projekte/*/work/timing_*.json
+!projekte/*/work/*.py
 projekte/*/out/*.mp4
 *.mov
 *.MOV
