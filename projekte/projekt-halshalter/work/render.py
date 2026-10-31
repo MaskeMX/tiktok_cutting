@@ -5,46 +5,45 @@ import json, subprocess, sys, os
 V = sys.argv[1]
 os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/..")
 FONT = "Montserrat"
-T1, T2, T3 = "raw/teil1.mov", "raw/teil2.mov", "raw/teil3.mov"
+T1, T2, T3, T4, T5 = (f"raw/teil{i}.mov" for i in range(1, 6))
 
 # Schnittliste Variante A: (timeline_start, timeline_end, quelle, in, zoom)
 # Jeder Quellbereich kommt nur EINMAL vor (wird unten geprüft).
 EDL = [
-    (0.00, 3.00, T2, 6.45, False),   # 0  Hook: Handy kommt auf die Halterung
-    (3.00, 5.12, T3, 0.00, True),    # 1  Verpackung: so trägt man's ("warum ich es nicht mehr hergebe")
-    (5.12, 7.30, T1, 7.06, False),   # 2  Abwaschen
+    (0.00, 2.56, T2, 6.45, False),   # 0  Hook: Handy kommt auf die Halterung
+    (2.56, 4.70, T4, 0.50, False),   # 1  Halterung in der Hand ("warum ich es nicht mehr hergebe")
+    (4.70, 7.30, T1, 7.06, False),   # 2  Abwaschen
     (7.30, 8.54, T1, 10.25, False),  # 3  Kaffeemaschine Tasten
     (8.54, 10.20, T1, 12.95, False), # 4  Kaffee läuft ("beide Hände frei")
     (10.20, 12.40, T2, 12.65, False),# 5  Lego 1
-    (12.40, 14.70, T2, 16.90, False),# 6  Lego 2
-    (14.70, 17.40, T3, 11.60, False),# 7  KATER schnuppert ("mein Kater ... klauen")
-    (17.40, 19.38, T1, 2.46, False), # 8  Banane POV ("dieses komplette Video")
-    (19.38, 22.74, T2, 0.20, True),  # 9  Kaffee mit Milch, Tasse nehmen ("ohne Handy anzufassen")
-    (22.74, 24.30, T1, 4.50, False), # 10 Banane fertig ("krass, oder?")
-    (24.30, 25.20, T3, 17.00, False),# 11 Halterung auf dem Tisch ("Halterung um den Hals")
-    (25.20, 26.30, T3, 19.50, False),# 12 Arme biegen
-    (26.30, 28.35, T2, 10.45, "top"),# 13 Handy drauf, fertig
-    (28.35, 30.50, T3, 9.25, False), # 14 Halterung in der Hand (Preis)
-    (30.50, 32.42, T3, 17.90, True), # 15 Halterung Tisch, Schluss ("Link unten")
+    (12.40, 13.88, T2, 16.90, False),# 6  Lego 2
+    (13.88, 14.90, T2, 18.40, False),# 7  Lego 3
+    (14.90, 17.40, T3, 11.95, False),# 8  KATER schnuppert ("mein Kater ... klauen")
+    (17.40, 19.38, T1, 2.46, False), # 9  Banane POV ("dieses komplette Video")
+    (19.38, 20.64, T2, 0.20, False), # 10 Kaffee mit Milch
+    (20.64, 22.74, T2, 2.50, True),  # 11 Tasse nehmen ("ohne Handy anzufassen")
+    (22.74, 24.30, T5, 6.80, False), # 12 Kater läuft über die Halterung ("krass, oder?")
+    (24.30, 25.40, T3, 0.40, True),  # 13 Verpackung: am Hals ("Halterung um den Hals")
+    (25.40, 26.40, T4, 7.50, False), # 14 Arme biegen
+    (26.40, 28.40, T2, 10.45, "top"),# 15 Handy drauf, fertig
+    (28.40, 30.50, T3, 9.30, False), # 16 Halterung in der Hand (Preis)
+    (30.50, 32.42, T3, 17.00, True), # 17 Halterung auf dem Tisch, Schluss
 ]
 
 VARIANTS = {
-    "A": {"hook": "Braucht kein Mensch?", "hookname": "keinmensch", "swap": None},
-    # B: Kater nach vorne, Handy-Clip wandert auf den Kater-Platz
-    "B": {"hook": "Mein Kater wollte\\Nsie sofort klauen", "hookname": "kater", "swap": 7},
-    # C: Banane POV nach vorne, Handy-Clip wandert auf den Bananen-Platz
-    "C": {"hook": "Handy nie\\Nangefasst.", "hookname": "nieangefasst", "swap": 8},
+    "A": {"hook": "Braucht kein Mensch?", "hookname": "keinmensch"},
+    "B": {"hook": "Mein Kater wollte\\Nsie sofort klauen", "hookname": "kater"},
+    "C": {"hook": "Handy nie\\Nangefasst.", "hookname": "nieangefasst"},
 }
 cfg = VARIANTS[V]
-if cfg["swap"] is not None:
-    k = cfg["swap"]
-    a0, b0, s0, i0, z0 = EDL[0]; ak, bk, sk, ik, zk = EDL[k]
-    EDL[0] = (a0, b0, sk, ik, zk)
-    EDL[k] = (ak, bk, s0, i0, z0)
-    if V == "B":  # Kater-Clip ist 2.7 s, Hook-Slot 3.0 s -> früher einsteigen
-        EDL[0] = (a0, b0, T3, 11.40, False)
-    if V == "C":  # Banane POV ab 2.46 für 3.0 s überschneidet Seg 10 -> Seg 10 nach hinten
-        EDL[10] = (22.74, 24.30, T1, 5.46, False)
+if V == "B":  # Kater nach vorne, zweiter Kater-Clip auf den Kater-Satz, Handy-Clip auf "krass"
+    EDL[0] = (0.00, 2.56, T3, 12.00, False)
+    EDL[8] = (14.90, 17.40, T5, 6.40, False)
+    EDL[12] = (22.74, 24.30, T2, 6.45, False)
+if V == "C":  # Banane POV nach vorne, Handy-Clip auf den Bananen-Platz, anderer Schluss
+    EDL[0] = (0.00, 2.56, T1, 2.46, False)
+    EDL[9] = (17.40, 19.38, T2, 6.45, False)
+    EDL[17] = (30.50, 32.42, T4, 10.30, True)
 
 # Prüfung: kein Quellbereich doppelt
 rng = sorted((s, i, i + (b - a)) for a, b, s, i, z in EDL)

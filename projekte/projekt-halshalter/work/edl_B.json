@@ -2,19 +2,19 @@
  {
   "start": 0.0,
   "end": 2.56,
-  "src": "raw/teil1.mov",
-  "inp": 2.46,
+  "src": "raw/teil3.mov",
+  "inp": 12.0,
   "zoom": false
  },
  {
   "start": 2.56,
-  "end": 5.12,
-  "src": "raw/teil2.mov",
-  "inp": 9.95,
-  "zoom": "top"
+  "end": 4.7,
+  "src": "raw/teil4.mov",
+  "inp": 0.5,
+  "zoom": false
  },
  {
-  "start": 5.12,
+  "start": 4.7,
   "end": 7.3,
   "src": "raw/teil1.mov",
   "inp": 7.06,
@@ -50,65 +50,79 @@
  },
  {
   "start": 13.88,
-  "end": 17.4,
+  "end": 14.9,
   "src": "raw/teil2.mov",
-  "inp": 0.45,
-  "zoom": true
+  "inp": 18.4,
+  "zoom": false
+ },
+ {
+  "start": 14.9,
+  "end": 17.4,
+  "src": "raw/teil5.mov",
+  "inp": 6.4,
+  "zoom": false
  },
  {
   "start": 17.4,
   "end": 19.38,
   "src": "raw/teil1.mov",
-  "inp": 5.02,
+  "inp": 2.46,
   "zoom": false
  },
  {
   "start": 19.38,
   "end": 20.64,
-  "src": "raw/teil1.mov",
-  "inp": 11.5,
+  "src": "raw/teil2.mov",
+  "inp": 0.2,
   "zoom": false
  },
  {
   "start": 20.64,
   "end": 22.74,
   "src": "raw/teil2.mov",
-  "inp": 18.3,
-  "zoom": false
+  "inp": 2.5,
+  "zoom": true
  },
  {
   "start": 22.74,
   "end": 24.3,
   "src": "raw/teil2.mov",
-  "inp": 3.66,
-  "zoom": false
- },
- {
-  "start": 24.3,
-  "end": 27.12,
-  "src": "raw/teil2.mov",
   "inp": 6.45,
   "zoom": false
  },
  {
-  "start": 27.12,
-  "end": 29.7,
-  "src": "raw/teil2.mov",
-  "inp": 9.27,
-  "zoom": "top"
+  "start": 24.3,
+  "end": 25.4,
+  "src": "raw/teil3.mov",
+  "inp": 0.4,
+  "zoom": true
  },
  {
-  "start": 29.7,
-  "end": 31.75,
-  "src": "raw/teil2.mov",
-  "inp": 14.85,
+  "start": 25.4,
+  "end": 26.4,
+  "src": "raw/teil4.mov",
+  "inp": 7.5,
   "zoom": false
  },
  {
-  "start": 31.75,
-  "end": 32.42,
+  "start": 26.4,
+  "end": 28.4,
   "src": "raw/teil2.mov",
-  "inp": 11.85,
+  "inp": 10.45,
   "zoom": "top"
+ },
+ {
+  "start": 28.4,
+  "end": 30.5,
+  "src": "raw/teil3.mov",
+  "inp": 9.3,
+  "zoom": false
+ },
+ {
+  "start": 30.5,
+  "end": 32.42,
+  "src": "raw/teil3.mov",
+  "inp": 17.0,
+  "zoom": true
  }
 ]
