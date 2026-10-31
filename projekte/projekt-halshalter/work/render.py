@@ -5,42 +5,52 @@ import json, subprocess, sys, os
 V = sys.argv[1]
 os.chdir(os.path.dirname(os.path.abspath(__file__)) + "/..")
 FONT = "Montserrat"
-T1, T2 = "raw/teil1.mov", "raw/teil2.mov"
+T1, T2, T3 = "raw/teil1.mov", "raw/teil2.mov", "raw/teil3.mov"
 
-# Mittelteil (für alle Varianten gleich): (timeline_start, timeline_end, quelle, in, zoom)
-MIDDLE = [
-    (5.12, 7.30, T1, 7.06, False),   # Abwaschen
-    (7.30, 8.54, T1, 10.25, False),  # Kaffeemaschine Tasten
-    (8.54, 10.20, T1, 12.95, False), # Kaffee läuft
-    (10.20, 12.40, T2, 12.65, False),# Lego 1
-    (12.40, 13.88, T2, 16.90, False),# Lego 2
-    (13.88, 17.40, T2, 0.20, True),  # Kaffee mit Milch (Kater fehlt)
-    (17.40, 19.38, T1, 5.02, False), # Banane Ende
-    (19.38, 20.64, T1, 11.50, False),# Tasten
-    (20.64, 22.74, T2, 18.30, False),# Lego Ende
-    (22.74, 24.30, T2, 3.66, False), # Tasse nehmen
-    (24.30, 27.12, T2, 6.45, False), # Handy drauf
-    (27.12, 29.70, T2, 9.27, "top"),  # Produkt (Preis)
-    (29.70, 31.75, T2, 14.85, False),# Lego Mitte
-    (31.75, 32.42, T2, 11.85, "top"),# Produkt Schluss
+# Schnittliste Variante A: (timeline_start, timeline_end, quelle, in, zoom)
+# Jeder Quellbereich kommt nur EINMAL vor (wird unten geprüft).
+EDL = [
+    (0.00, 3.00, T2, 6.45, False),   # 0  Hook: Handy kommt auf die Halterung
+    (3.00, 5.12, T3, 0.00, True),    # 1  Verpackung: so trägt man's ("warum ich es nicht mehr hergebe")
+    (5.12, 7.30, T1, 7.06, False),   # 2  Abwaschen
+    (7.30, 8.54, T1, 10.25, False),  # 3  Kaffeemaschine Tasten
+    (8.54, 10.20, T1, 12.95, False), # 4  Kaffee läuft ("beide Hände frei")
+    (10.20, 12.40, T2, 12.65, False),# 5  Lego 1
+    (12.40, 14.70, T2, 16.90, False),# 6  Lego 2
+    (14.70, 17.40, T3, 11.60, False),# 7  KATER schnuppert ("mein Kater ... klauen")
+    (17.40, 19.38, T1, 2.46, False), # 8  Banane POV ("dieses komplette Video")
+    (19.38, 22.74, T2, 0.20, True),  # 9  Kaffee mit Milch, Tasse nehmen ("ohne Handy anzufassen")
+    (22.74, 24.30, T1, 4.50, False), # 10 Banane fertig ("krass, oder?")
+    (24.30, 25.20, T3, 17.00, False),# 11 Halterung auf dem Tisch ("Halterung um den Hals")
+    (25.20, 26.30, T3, 19.50, False),# 12 Arme biegen
+    (26.30, 28.35, T2, 10.45, "top"),# 13 Handy drauf, fertig
+    (28.35, 30.50, T3, 9.25, False), # 14 Halterung in der Hand (Preis)
+    (30.50, 32.42, T3, 17.90, True), # 15 Halterung Tisch, Schluss ("Link unten")
 ]
-PROD = (T2, 9.95, "top")    # Produkt mit Handy, sauber
-BANANA = (T1, 2.46, False) # Banane POV
-LEGO = (T2, 12.65, False)
 
 VARIANTS = {
-    "A": {"open": [PROD, BANANA], "hook": "Braucht kein Mensch?", "hookname": "keinmensch"},
-    "B": {"open": [BANANA, PROD], "hook": "Beide Hände frei.\\NDas Handy filmt.", "hookname": "haendefrei"},
-    "C": {"open": [LEGO, (T1, 0.0, False)], "hook": "Handy nie\\Nangefasst.", "hookname": "nieangefasst"},
+    "A": {"hook": "Braucht kein Mensch?", "hookname": "keinmensch", "swap": None},
+    # B: Kater nach vorne, Handy-Clip wandert auf den Kater-Platz
+    "B": {"hook": "Mein Kater wollte\\Nsie sofort klauen", "hookname": "kater", "swap": 7},
+    # C: Banane POV nach vorne, Handy-Clip wandert auf den Bananen-Platz
+    "C": {"hook": "Handy nie\\Nangefasst.", "hookname": "nieangefasst", "swap": 8},
 }
 cfg = VARIANTS[V]
-o1, o2 = cfg["open"]
-EDL = [(0.00, 2.56, *o1), (2.56, 5.12, *o2)] + MIDDLE
-if V == "B":  # Mittel-Clip leicht anders getrimmt (Duplikat-Schutz)
-    EDL[2 + 5] = (13.88, 17.40, T2, 0.45, True)
-if V == "C":
-    EDL[2 + 12] = (29.70, 31.75, T2, 10.45, "top")  # Schluss auf Produkt
-    EDL[2 + 3] = (10.20, 12.40, T2, 15.30, False)  # Lego weiter hinten (Anfang ist schon Hook)
+if cfg["swap"] is not None:
+    k = cfg["swap"]
+    a0, b0, s0, i0, z0 = EDL[0]; ak, bk, sk, ik, zk = EDL[k]
+    EDL[0] = (a0, b0, sk, ik, zk)
+    EDL[k] = (ak, bk, s0, i0, z0)
+    if V == "B":  # Kater-Clip ist 2.7 s, Hook-Slot 3.0 s -> früher einsteigen
+        EDL[0] = (a0, b0, T3, 11.40, False)
+    if V == "C":  # Banane POV ab 2.46 für 3.0 s überschneidet Seg 10 -> Seg 10 nach hinten
+        EDL[10] = (22.74, 24.30, T1, 5.46, False)
+
+# Prüfung: kein Quellbereich doppelt
+rng = sorted((s, i, i + (b - a)) for a, b, s, i, z in EDL)
+for (s1, x1, y1), (s2, x2, y2) in zip(rng, rng[1:]):
+    assert not (s1 == s2 and x2 < y1 - 0.01), f"Doppelt: {s1} {x1:.2f}-{y1:.2f} / {x2:.2f}-{y2:.2f}"
+assert abs(EDL[-1][1] - 32.42) < 0.01 and all(EDL[n][1] == EDL[n+1][0] for n in range(len(EDL)-1))
 
 OVERLAYS = [
     (0.00, 2.70, cfg["hook"], "Hook"),
@@ -49,6 +59,7 @@ OVERLAYS = [
 ]
 
 os.makedirs("work/seg", exist_ok=True)
+print("EDL ok, keine Dopplungen")
 json.dump([dict(start=a, end=b, src=s, inp=i, zoom=z) for a, b, s, i, z in EDL],
           open(f"work/edl_{V}.json", "w"), indent=1)
 
