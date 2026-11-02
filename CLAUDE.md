@@ -47,7 +47,7 @@ Lege `work/` und `out/` an, falls sie fehlen. Rohdateien niemals überschreiben.
 ### Schritt 4 – Rendern
 - Jedes Segment einzeln auf Zielformat bringen (siehe Technik), dann per concat zusammensetzen.
 - Overlays und Untertitel per `drawtext` oder `.ass`-Untertitel (`subtitles=`-Filter) einbrennen. Für Untertitel `.ass` bevorzugen (Stil-Kontrolle).
-- Audio mischen: Voice-over 100 %, Original-Ton der Clips ~10 % (Wasserhahn, Kaffeemaschine etc. machen es echt), Musik falls vorhanden ~10–15 % und unter der Stimme (Sidechain/Ducking mit `sidechaincompress` ok).
+- Audio mischen: Voice-over 100 %. **Original-Ton der Clips standardmäßig STUMM** (nur wenn ich es ausdrücklich sage, ~10 % dazumischen). Musik falls vorhanden ~10–15 % und unter der Stimme (Sidechain/Ducking mit `sidechaincompress` ok).
 
 ### Schritt 5 – Qualitätskontrolle (Pflicht, bevor du mir etwas gibst)
 - Kontaktbogen des **fertigen** Videos (1 Bild/Sekunde) erstellen und selbst ansehen.
@@ -107,7 +107,7 @@ Lege `work/` und `out/` an, falls sie fehlen. Rohdateien niemals überschreiben.
 
 ### Ton
 - Voice-over -14 LUFS, Spitzen max. -1,5 dBTP.
-- Original-Clip-Ton ~10 %, Musik ~10–15 %, nie lauter als die Stimme.
+- Original-Clip-Ton: stumm (Standard), Musik ~10–15 %, nie lauter als die Stimme.
 - Kein Ton-Loch am Anfang: Stimme oder Geräusch ab Frame 0.
 
 ---
@@ -158,3 +158,11 @@ Lege `work/` und `out/` an, falls sie fehlen. Rohdateien niemals überschreiben.
 - Projekte liegen unter `projekte/projekt-<produkt>/` (Struktur siehe Abschnitt 1).
 - Werkzeuge installiert `setup/install.sh` (ffmpeg, Whisper/faster-whisper CPU, Montserrat-Schrift). Zu Sitzungsbeginn prüfen, ob `faster-whisper` und `fc-list | grep Montserrat` da sind – sonst `bash setup/install.sh` ausführen.
 - Große Videodateien (`raw/`, `voice/`, `music/`, `work/`, `out/`) werden **nicht** ins Repo committet (siehe `.gitignore`). Ins Repo gehören nur `script.md`, Schnittlisten und Captions.
+
+---
+
+## 9. Lernen: was funktioniert auf TikTok?
+
+- Jeder Schnitt wird in `ergebnisse.md` eingetragen (Produkt, Variante, Hook-Art, Stilmittel).
+- Wenn ich Zahlen nachliefere (Views, Ø Wiedergabedauer, Verkäufe), trägst du sie dort ein und fasst unter „Erkenntnisse“ zusammen, was besser läuft.
+- Bei neuen Schnitten: zuerst `ergebnisse.md` lesen und die Hook-Arten/Stilmittel bevorzugen, die bisher gewinnen – aber immer mindestens eine Variante als Test für etwas Neues.
