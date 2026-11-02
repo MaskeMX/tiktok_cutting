@@ -48,17 +48,12 @@ def build(name, parts, gap=0.0):
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", f"work/{name}_comp.wav", "-af", ln,
                     "-ar", "48000", f"voice/{name}.wav"], check=True)
 
-A, C = "voice/A_orig.wav", "voice/CTA_orig.wav"
-sA, sC = silences(A), silences(C)
-
-# Variante A: Nein/Ja-Takt (Pausen auf 0.4 s, Rhythmus bleibt) + Hauptteil + neue CTA (Weihnachten)
-build("A", [
-    piece(A, 0.50, 8.15, sA, 0.40) + piece(A, 8.15, 21.30, sA, 0.15),
-    piece(C, 0.70, 12.00, sC, 0.15),
-], gap=0.25)
-
-# Variante B: "Lappen gegen Shark, drei Runden"
-build("B", [piece(C, 68.55, 99.20, sC, 0.18)])
+T = "voice/tonspuren.wav"
+sT = silences(T)
+# A: "Kauf dir auf keinen Fall ... bevor du diese 3 Dinge weißt"
+build("A", [piece(T, 0.00, 30.50, sT, 0.15)])
+# B: "Am Anfang dachte ich ... Gym-Spielzeug" + Preis/Link
+build("B", [piece(T, 57.95, 80.85, sT, 0.15), piece(T, 93.35, 99.05, sT, 0.15)], gap=0.30)
 for n in ("A", "B"):
     print(n, subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                              f"voice/{n}.wav"], capture_output=True, text=True).stdout.strip())

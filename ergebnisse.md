@@ -10,6 +10,9 @@ Zahlen nach ~48 h eintragen (Views, Ø Wiedergabedauer in %, Verkäufe). Claude 
 | 2026-11-02 | Shark HydroVac | A `neinja` | NEIN/JA-Takt (Vorher/Nachher) | Clip-Ton stumm, Preiskarte, Klo-Beweis | 30 s | | | |
 | 2026-11-02 | Shark HydroVac | B `lappenvsshark` | Sauerei + „Lappen vs. Shark“ | 3 Runden, NEIN/JA, Preiskarte | 29 s | | | |
 | 2026-11-02 | Shark HydroVac | C `lappenverliert` | Lappen-Fail zuerst | 3 Runden, NEIN/JA, Preiskarte | 29 s | | | |
+| 2026-11-02 | Massagepistole | A `3dinge` | „Nicht kaufen, bevor du DAS weißt“ (3-Punkte-Liste) | 1./2./3.-Einblendungen, Preiskarte | 30 s | | | |
+| 2026-11-02 | Massagepistole | B `gymspielzeug` | Zweifel „nur Gym-Spielzeug?“ + Banane | NEIN/JA, Preiskarte | 28 s | | | |
+| 2026-11-02 | Massagepistole | C `bananenbrei` | Kurioses zuerst (Bananenbrei) | 1./2./3.-Einblendungen, Preiskarte | 30 s | | | |
 
 ## Erkenntnisse
 

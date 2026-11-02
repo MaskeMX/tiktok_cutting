@@ -1,0 +1,93 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.2,
+  "src": "raw/ohne_titel.mov",
+  "inp": 3.5,
+  "zoom": false
+ },
+ {
+  "start": 2.2,
+  "end": 4.1,
+  "src": "raw/teil1.mov",
+  "inp": 13.0,
+  "zoom": false
+ },
+ {
+  "start": 4.1,
+  "end": 6.6,
+  "src": "raw/teil1.mov",
+  "inp": 17.0,
+  "zoom": false
+ },
+ {
+  "start": 6.6,
+  "end": 8.6,
+  "src": "raw/ohne_titel.mov",
+  "inp": 19.9,
+  "zoom": false
+ },
+ {
+  "start": 8.6,
+  "end": 10.3,
+  "src": "raw/teil1.mov",
+  "inp": 2.0,
+  "zoom": true
+ },
+ {
+  "start": 10.3,
+  "end": 13.5,
+  "src": "raw/teil1.mov",
+  "inp": 25.9,
+  "zoom": false
+ },
+ {
+  "start": 13.5,
+  "end": 15.1,
+  "src": "raw/highlite.mov",
+  "inp": 1.0,
+  "zoom": false
+ },
+ {
+  "start": 15.1,
+  "end": 16.7,
+  "src": "raw/ohne_titel.mov",
+  "inp": 9.0,
+  "zoom": false
+ },
+ {
+  "start": 16.7,
+  "end": 18.7,
+  "src": "raw/ohne_titel.mov",
+  "inp": 10.6,
+  "zoom": false
+ },
+ {
+  "start": 18.7,
+  "end": 20.6,
+  "src": "raw/teil1.mov",
+  "inp": 20.0,
+  "zoom": false
+ },
+ {
+  "start": 20.6,
+  "end": 22.6,
+  "src": "raw/highlite.mov",
+  "inp": 3.0,
+  "zoom": true
+ },
+ {
+  "start": 22.6,
+  "end": 25.5,
+  "src": "raw/teil1.mov",
+  "inp": 5.0,
+  "zoom": true
+ },
+ {
+  "start": 25.5,
+  "end": 28.0,
+  "src": "raw/teil1.mov",
+  "inp": 22.0,
+  "zoom": false
+ }
+]
