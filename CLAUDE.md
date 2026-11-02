@@ -66,6 +66,7 @@ Lege `work/` und `out/` an, falls sie fehlen. Rohdateien niemals überschreiben.
 - Dateien: `out/<produkt>_<variante>_<hook-kurzname>.mp4`, z. B. `out/nacken_A_twist.mp4`.
 - Pro Video zusätzlich `out/<…>_caption.txt` mit Caption-Vorschlag + 3–5 Hashtags.
 - Kurze Zusammenfassung an mich: welche Varianten, Dauer, was ich vor dem Posten noch prüfen muss (Preis, Werbekennzeichnung).
+- **Ablage:** Fertige Videos + Captions in meinen Mac-Ordner **`TikTok_Cuts`** legen (per Remote Control: `list_computer_folders` → `request_computer_folder`), Unterordner pro Produkt, z. B. `TikTok_Cuts/halshalter/`. Ist der Ordner nicht verfügbar (Mac aus / nicht freigegeben): Dateien im Chat schicken und kurz Bescheid sagen.
 
 ---
 
