@@ -53,7 +53,7 @@ sT = silences(T)
 # A: "Kauf dir auf keinen Fall ... bevor du diese 3 Dinge weißt"
 build("A", [piece(T, 0.00, 30.50, sT, 0.15)])
 # B: "Am Anfang dachte ich ... Gym-Spielzeug" + Preis/Link
-build("B", [piece(T, 57.95, 80.85, sT, 0.15), piece(T, 93.35, 99.05, sT, 0.15)], gap=0.30)
+build("B", [piece(T, 57.95, 74.70, sT, 0.15), piece(T, 77.30, 80.85, sT, 0.15), piece(T, 93.35, 99.05, sT, 0.15)], gap=0.28)  # 1. Anlauf "dafür ist nicht ge-" (74.9-76.7) raus
 for n in ("A", "B"):
     print(n, subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                              f"voice/{n}.wav"], capture_output=True, text=True).stdout.strip())

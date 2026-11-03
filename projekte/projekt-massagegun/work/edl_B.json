@@ -64,28 +64,21 @@
  },
  {
   "start": 18.7,
-  "end": 20.6,
-  "src": "raw/teil1.mov",
-  "inp": 20.0,
-  "zoom": false
- },
- {
-  "start": 20.6,
-  "end": 22.6,
+  "end": 20.55,
   "src": "raw/highlite.mov",
   "inp": 3.0,
   "zoom": true
  },
  {
-  "start": 22.6,
-  "end": 25.5,
+  "start": 20.55,
+  "end": 23.4,
   "src": "raw/teil1.mov",
   "inp": 5.0,
   "zoom": true
  },
  {
-  "start": 25.5,
-  "end": 28.0,
+  "start": 23.4,
+  "end": 25.96,
   "src": "raw/teil1.mov",
   "inp": 22.0,
   "zoom": false

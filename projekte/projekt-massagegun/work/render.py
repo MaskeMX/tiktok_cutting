@@ -45,7 +45,7 @@ if V in ("A", "C"):
         OV[0] = (0.00, 2.60, "Bananenbrei mit der\\NMassagepistole?!", "Hook")
         HOOK = "bananenbrei"
 else:
-    VOICE, WHISPER, DUR = "voice/B.wav", "work/whisper_B.json", 28.00
+    VOICE, WHISPER, DUR = "voice/B.wav", "work/whisper_B.json", 25.96
     EDL = [
         (0.00, 2.20, O, 3.50, False),    # Hook: Banane wird zu Brei
         (2.20, 4.10, T, 13.00, False),   # Display ("nur Gym-Spielzeug")
@@ -55,15 +55,14 @@ else:
         (10.30, 13.50, T, 25.90, False), # NEIN: Aufsatz in 2 Sekunden gewechselt
         (13.50, 15.10, H, 1.00, False),  # JA: Kraft – Orange Nahaufnahme
         (15.10, 16.70, O, 9.00, False),  # JA: Banane zu Brei
-        (16.70, 18.70, O, 10.60, False), # "dafür ist sie nicht gedacht"
-        (18.70, 20.60, T, 20.00, False), # Orange
-        (20.60, 22.60, H, 3.00, True),   # "aber krass, dass es schon geht"
-        (22.60, 25.50, T, 5.00, True),   # Koffer (unter der Preiskarte)
-        (25.50, 28.00, T, 22.00, False), # Orange, Schluss
+        (16.70, 18.70, O, 10.60, False), # "Verstehe mich nicht falsch, dafür ist sie nicht gedacht"
+        (18.70, 20.55, H, 3.00, True),   # "aber krass, dass es schon geht"
+        (20.55, 23.40, T, 5.00, True),   # Koffer (unter der Preiskarte)
+        (23.40, 25.96, T, 22.00, False), # Orange, Schluss
     ]
     OV = [(0.00, 2.60, "Nur Gym-Spielzeug?", "Hook"),
           (6.60, 13.50, "NEIN", "No"), (13.50, 16.70, "JA", "Ja")]
-    PRICE = (22.60, 27.40)
+    PRICE = (20.55, 25.40)
     SUB_FROM = 0.0
     HOOK = "gymspielzeug"
 
@@ -138,7 +137,7 @@ card_bottom = 300 + card.height
 
 # 3) Untertitel (.ass)
 FIX = {"Kauft": "Kauf", "1.": "Erstens,", "2.": "Zweitens,", "3.": "drittens,", "Aufwärze": "Aufsätze",
-       "Gymspielzeug,": "Gym-Spielzeug,", "prei": "Brei", "gibt.": "geht."}
+       "Gymspielzeug,": "Gym-Spielzeug,", "prei": "Brei", "brei": "Brei", "gibt.": "geht."}
 words = []
 for s in json.load(open(WHISPER)):
     words += [dict(w=w["w"], s=w["s"], e=w["e"]) for w in s["words"]]
