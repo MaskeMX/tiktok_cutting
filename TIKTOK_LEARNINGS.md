@@ -7,7 +7,7 @@ Ergänzt die `CLAUDE.md` (Technik & Schnitt-Style). Diese Datei sagt, **was** ge
 
 ## 0. Kurzfassung (das Wichtigste in 10 Zeilen)
 
-1. Die ersten 2 Sekunden entscheiden: stärkstes Bild + Hook-Satz gleichzeitig.
+1. Die ersten 2 Sekunden entscheiden: **Dreifach-Hook** – visuell (stärkstes Bild) + sprachlich (erster Satz) + Text-Overlay, alle gleichzeitig.
 2. Jeder Hook folgt einer **bewährten Formel** (Abschnitt 2) – nie „Hey Leute, heute zeig ich euch …“.
 3. Features werden als **Beweis** gezeigt, nicht aufgezählt.
 4. Preis immer mit **Anker** („normal ca. X, gerade Y“) – nur wenn echt.
@@ -72,7 +72,10 @@ Ergänzt die `CLAUDE.md` (Technik & Schnitt-Style). Diese Datei sagt, **was** ge
 
 ## 3. Aufbau eines Verkaufsvideos (Muster aus allen Transkripten)
 
-1. **Hook (0–2 s):** Formel + stärkstes Bild + Text-Overlay.
+1. **Hook (0–2 s) = Dreifach-Hook, immer alle drei gleichzeitig:**
+   - **Visuell:** stärkstes Bild/Effekt ab Frame 0 (Dreck, Ekel, Vorher/Nachher, Kater, Zeitlupe) – nie Logo oder leeres Bild.
+   - **Sprachlich:** Hook-Formel als erster Satz.
+   - **Text:** Overlay, das den Satz **ergänzt statt wiederholt** (Preis, Frage, offene Schleife), max. 6 Wörter. Wer ohne Ton schaut, muss allein durch Bild + Text bleiben.
 2. **Problem oder Situation (2–6 s):** kurz, nachvollziehbar (Papa-Alltag, Mama mit Rücken, Abwasch).
 3. **Beweis / Features (6–20 s):** typische Reihenfolge bei Haushaltsgeräten:
    saugen + wischen in einem → reinigt sich selbst → getrennte Tanks (Frisch/Schmutz, fest/flüssig) → Teppichmodus → kabellos → Preis.

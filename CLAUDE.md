@@ -172,6 +172,7 @@ Lege `work/` und `out/` an, falls sie fehlen. Rohdateien niemals überschreiben.
 ## 10. Skripte schreiben
 
 - **Vor jedem Skript `TIKTOK_LEARNINGS.md` lesen** (Hook-Formeln, Aufbau, Wortschatz, Ollis Vorlieben) – sie sagt, *was* gesagt wird; diese Datei hier, *wie* geschnitten wird.
+- **Jedes Skript bekommt einen Dreifach-Hook** und ich notiere alle drei: visueller Hook (welcher Clip/Sekunde als erstes Bild), sprachlicher Hook (erster Satz), Text-Hook (Overlay, ergänzt den Satz, nicht wörtlich gleich). Alle drei ab Frame 0.
 - Flüssig und gesprochen schreiben, keine abgehackten Werbe-Stichpunkte.
 - Verneinte Vorteile immer positiv: „nicht, weil er sich selbst reinigt“ (nie „…nicht selbst reinigt“).
 - Aufruf immer: Preis (+ echter Anker) + Ort des Links + ehrliche Dringlichkeit („Ich pack dir den Link unten links rein, aber ich würde nicht zu lange warten“). Nie das Wort „kaufen“.
