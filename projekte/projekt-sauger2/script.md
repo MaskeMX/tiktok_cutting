@@ -15,17 +15,17 @@ Ziel: ca. 25–30 Sekunden pro Variante.
 > Und dann der Test: einmal drüber – Krümel weg. Vorne leuchtet er sogar, damit du siehst, wo noch was liegt.
 > Danach ab in die Station, da putzt er sich selbst.
 > Und das Dreckwasser? Einfach wegkippen.
-> Gerade gibt's den Shark HydroVac mit Coupon für 199 Euro statt 299. Link unten links.
+> Gerade gibt's den Shark HydroVac für nur 119,99 Euro. Link unten links.
 
 ## Variante B – „Lohnt sich das?“ (Hook: Frage/Zweifel)
 
-> Lohnt sich ein Nass-Trocken-Sauger für 199 Euro? Ich hab ihn ausgepackt und direkt getestet.
+> Lohnt sich ein Nass-Trocken-Sauger für 120 Euro? Ich hab ihn ausgepackt und direkt getestet.
 > Im Karton: Gerät, Stiel, Station und Reiniger.
 > Aufbauen ging schneller als gedacht – zusammenstecken, Wasser rein, los.
 > Dann Krümel auf den Boden. Er saugt und wischt gleichzeitig, und mit dem Licht vorne siehst du jeden Krümel.
 > Zurück in die Station, Selbstreinigung an.
 > Und am Ende kippst du nur noch das Dreckwasser weg.
-> Mit Coupon gerade 199 statt 299 Euro. Link ist unten links.
+> Gerade für nur 119,99 Euro. Link ist unten links.
 
 ---
 
@@ -41,10 +41,10 @@ Ziel: ca. 25–30 Sekunden pro Variante.
 | Licht vorne | Nahaufnahme Bürste mit LEDs | teil2 11–14, teil1 0–2 |
 | Station / Selbstreinigung | Sauger fährt in die Station | clip_a 35–40 |
 | Dreckwasser wegkippen | Tank ins Klo | IMG_3791 |
-| Preis + Link | Preiskarte (199,98 € mit Coupon statt 299,98 €) | Screenshot |
+| Preis + Link | Preiskarte mit 119,99 € (neuer Screenshot nötig) | Screenshot |
 
 ## Bitte vorher prüfen
 
-- **Coupon:** Gilt 199,98 € mit Coupon (statt 299,98 €) noch? Sonst Preis-Satz anpassen.
+- **Preis jetzt 119,99 €** – bitte neuen Shop-Screenshot schicken (für die Preiskarte). Falls der Preis nur mit Coupon gilt oder es einen Streichpreis gibt, sehe ich das dort.
 - **Was sind die Krümel?** (Kekse, Müsli, Erde …) – wenn du es sagen willst, z. B. „Kekskrümel überall“.
 - „Saugt und wischt gleichzeitig“ und „putzt sich selbst in der Station“ hast du beim letzten Shark-Video schon gesagt – das passt zum Gerät.
