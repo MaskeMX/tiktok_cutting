@@ -151,6 +151,9 @@ Ergänzt die `CLAUDE.md` (Technik & Schnitt-Style). Diese Datei sagt, **was** ge
 - „Olli hat getestet: Bleibt“ **nicht automatisch** einbauen – nur wenn gewünscht (bei der Nackenhalterung explizit nicht).
 - Keine weichgespülten Kind-Sätze („Momente mit deinem Kind filmen …“) – zu geschwätzig.
 - Ein **richtiger Call to Action** gehört immer dazu: Preis + Grund + Ort des Links.
+- **Kein Produktname im Hook** – erst Kategorie („3-in-1-Waschsauger“, „Massagepistole“), Marke später. Neugier statt Werbung.
+- **Keine Formel doppelt pro Produkt:** neue Videos zu einem bereits beworbenen Produkt nutzen andere Hook-Formeln als die alten (siehe `ergebnisse.md`).
+- **Die ersten Sätze müssen sitzen** – kurz, prägnant, sofort Neugier.
 - **„Vorteile verneinen“ immer positiv formulieren:** „nicht, weil er sich selbst reinigt“ – **nie** „nicht, weil er sich nicht selbst reinigt“ (klingt, als könne er es nicht). Gleiches Muster wie im Original: „nicht, weil …“ + echter Vorteil.
 
 ---
