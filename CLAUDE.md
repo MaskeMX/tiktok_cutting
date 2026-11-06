@@ -166,3 +166,12 @@ Lege `work/` und `out/` an, falls sie fehlen. Rohdateien niemals überschreiben.
 - Jeder Schnitt wird in `ergebnisse.md` eingetragen (Produkt, Variante, Hook-Art, Stilmittel).
 - Wenn ich Zahlen nachliefere (Views, Ø Wiedergabedauer, Verkäufe), trägst du sie dort ein und fasst unter „Erkenntnisse“ zusammen, was besser läuft.
 - Bei neuen Schnitten: zuerst `ergebnisse.md` lesen und die Hook-Arten/Stilmittel bevorzugen, die bisher gewinnen – aber immer mindestens eine Variante als Test für etwas Neues.
+
+---
+
+## 10. Skripte schreiben
+
+- **Vor jedem Skript `TIKTOK_LEARNINGS.md` lesen** (Hook-Formeln, Aufbau, Wortschatz, Ollis Vorlieben) – sie sagt, *was* gesagt wird; diese Datei hier, *wie* geschnitten wird.
+- Flüssig und gesprochen schreiben, keine abgehackten Werbe-Stichpunkte.
+- Verneinte Vorteile immer positiv: „nicht, weil er sich selbst reinigt“ (nie „…nicht selbst reinigt“).
+- Aufruf immer: Preis (+ echter Anker) + Ort des Links + ehrliche Dringlichkeit („Ich pack dir den Link unten links rein, aber ich würde nicht zu lange warten“). Nie das Wort „kaufen“.

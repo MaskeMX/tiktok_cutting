@@ -1,44 +1,41 @@
-# Shark HydroVac – Auspacken & Krümel-Test (Skript zum Einsprechen)
+# Shark HydroVac – Auspacken & Krümel-Test (Skripte zum Einsprechen)
 
-**So aufnehmen:** Eine Datei pro Variante (Sprachmemos reicht). Ruhig, normales Tempo, nach jedem Satz kurz Luft holen.
-Wenn du dich versprichst: **ganzen Satz nochmal** sagen – ich nehme immer den letzten sauberen Anlauf.
-Ziel: ca. 25–30 Sekunden pro Variante.
+Grundlage: `TIKTOK_LEARNINGS.md` (Hook-Formeln, Aufbau, Wortschatz, Ollis Vorlieben).
+
+**So aufnehmen:** Eine Datei pro Variante (Sprachmemos reicht). Locker sprechen, wie im Gespräch.
+Wenn du dich versprichst: **ganzen Satz nochmal** – ich nehme immer den letzten sauberen Anlauf.
 
 ---
 
-## Variante A – „Preis-Hammer“ (Bottom-Funnel, ca. 20 s)
+## Variante A – „Unglaublicher Preis“ (Bottom-Funnel, ca. 20 s)
 
-> Stopp – den Shark HydroVac gibt's gerade für 119,99 Euro.
-> Saugt und wischt gleichzeitig – Krümel: einmal drüber, weg.
-> Vorne mit Licht, damit du jeden Krümel siehst.
-> Danach putzt er sich in der Station selbst, und das Dreckwasser kippst du einfach weg.
-> Ich hab ihn gerade erst ausgepackt: zusammenstecken, Wasser rein, fertig.
-> 119,99 Euro – Link unten links. Wenn du eh überlegt hast: jetzt ist der Moment.
+> Ganz ehrlich, mit dem Preis hab ich nicht gerechnet: Den Shark HydroVac gibt's gerade für 119,99 Euro.
+> Der saugt und wischt in einem Zug – guck, einmal drüber, zack, Krümel weg.
+> Danach fährst du ihn einfach in die Station, da putzt er sich komplett selbst, und das Dreckwasser kippst du ab ins Klo.
+> Ich pack dir den Link unten links rein, aber ich würde nicht zu lange warten.
 
-*Optionaler Hook, nur wenn die alten Shark-Videos (199 €) schon online sind:*
-> Letzte Woche hab ich ihn euch für 199 Euro gezeigt – jetzt kostet er nur noch 119,99.
+*Optionaler Preisanker am Anfang – nur wenn er stimmt (z. B. Streichpreis im Shop):*
+> Normal kostet der um die 300 Euro – gerade gibt's ihn für 119,99.
 
-## Variante B – „Lohnt sich das?“ (Hook: Frage/Zweifel)
+## Variante B – „Papa-Alltag + Auspacken“ (Mid-Funnel, ca. 30 s)
 
-> Lohnt sich ein Nass-Trocken-Sauger für 120 Euro? Ich hab ihn ausgepackt und direkt getestet.
-> Im Karton: Gerät, Stiel, Station und Reiniger.
-> Aufbauen ging schneller als gedacht – zusammenstecken, Wasser rein, los.
-> Dann Krümel auf den Boden. Er saugt und wischt gleichzeitig, und mit dem Licht vorne siehst du jeden Krümel.
-> Zurück in die Station, Selbstreinigung an.
-> Und am Ende kippst du nur noch das Dreckwasser weg.
-> Gerade für nur 119,99 Euro. Link ist unten links.
+> So sieht's bei uns nach dem Essen öfter aus – und der Shark ist gerade erst aus dem Karton.
+> Auspacken, zusammenstecken, Wasser und Reiniger rein, und los geht's.
+> Einmal drüber, zack, weg. Und vorne hat er sogar Licht, da siehst du jeden Krümel, den du sonst übersehen hättest.
+> Danach ab in die Station, da putzt er sich komplett selbst. Und das Dreckwasser? Boah … einfach ab ins Klo.
+> Gerade gibt's den Shark HydroVac für 119,99 Euro. Ich lass dir den Link unten links da, aber ich würde nicht zu lange warten.
 
-## Variante C – „Darum schick ich ihn zurück“ (Hook: Neugier, NEIN-Muster)
+## Variante C – „Ärger-Twist“ (Hook: offene Schleife + Vorteile verneinen)
 
-> Darum schick ich meinen Shark wieder zurück.
-> Und nein – nicht, weil er Krümel nicht mit einem Wisch wegsaugt.
-> Auch nicht, weil er sich nicht selbst reinigt.
-> Und auch nicht, weil er kein Licht hätte – das hat er sogar.
-> Sondern weil ich ihn für 199 Euro gekauft hab – und jetzt gibt's ihn für 119,99.
-> Also: Wenn du ihn willst, dann jetzt. Link unten links.
+> Am Anfang dachte ich: geil … aber am Ende verstehst du, warum ich mich trotzdem ärgere.
+> Und nein, nicht, weil er die Krümel mit einem Wisch wegsaugt.
+> Auch nicht, weil er sich in der Station selbst putzt.
+> Und auch nicht, weil er vorne sogar Licht hat.
+> Sondern weil ich vor Kurzem noch 199 Euro dafür bezahlt hab – und jetzt gibt's ihn für 119,99.
+> Also, ich pack dir den Link unten links rein, aber ich würde nicht zu lange warten.
 
-*Nur sagen, wenn du ihn wirklich zurückschickst (bzw. für 199 € gekauft hast). Ehrliche Alternative mit gleichem Effekt:*
-> Darum würde ich meinen Shark am liebsten zurückschicken.
+*Nur, wenn du ihn wirklich für 199 € gekauft hast. Wenn du ihn zurückschickst, darfst du stattdessen sagen:*
+> … warum ich meinen trotzdem zurückschick.
 
 ---
 
@@ -46,21 +43,19 @@ Ziel: ca. 25–30 Sekunden pro Variante.
 
 | Textteil | Clip | Sekunden im Rohmaterial |
 |---|---|---|
-| Hook A/B | teil1 – Sauger fährt in die Krümel (Licht an) | teil1 4–8 |
-| Hook C „Darum schick ich ihn zurück“ | Gerät im Karton / Reiniger-Flasche | clip_a 0–9 |
-| C: NEIN Krümel / NEIN Selbstreinigung / NEIN Licht | Krümel-Wisch / Station / LED-Nahaufnahme (rotes NEIN) | teil1 5–10 / clip_a 35–40 / teil2 11–14 |
-| C: „sondern weil … 199 → 119,99“ | Preiskarte | Screenshot |
-| Auspacken / „Im Karton“ | Reiniger-Flasche, Stiel, Station aus dem Karton | clip_a 0–9 |
-| Zusammenstecken | Gerät/Akku-Deckel, Stiel einstecken | clip_a 9–17, 27–30 |
+| Hook A „mit dem Preis nicht gerechnet“ | Glänzende saubere Spur neben Krümeln (Vorher/Nachher in einem Bild) + Preis-Overlay | teil1 6–10 |
+| Hook B „So sieht's bei uns aus …“ | Krümel auf dem Boden, Sauger fährt rein | teil1 4–8 |
+| Hook C „Am Anfang dachte ich: geil …“ | Gerät im Karton / Reiniger-Flasche | clip_a 0–9 |
+| Auspacken / zusammenstecken | Stiel, Station aus dem Karton, Teile einstecken | clip_a 2–17, 27–30 |
 | Wasser + Reiniger rein | Tank befüllen | clip_a 21–27 |
-| Krümel-Test / „saugt und wischt“ | Krümel werden aufgenommen | teil1 5–12, teil2 0–11 |
-| Licht vorne | Nahaufnahme Bürste mit LEDs | teil2 11–14, teil1 0–2 |
-| Station / Selbstreinigung | Sauger fährt in die Station | clip_a 35–40 |
-| Dreckwasser wegkippen | Tank ins Klo | IMG_3791 |
-| Preis + Link | Preiskarte mit 119,99 € (neuer Screenshot nötig) | Screenshot |
+| „einmal drüber, zack, weg“ / C: NEIN Krümel | Krümel werden aufgenommen | teil1 5–12, teil2 0–11 |
+| Licht vorne / C: NEIN Licht | Nahaufnahme Bürste mit LEDs | teil2 11–14, teil1 0–2 |
+| Station / C: NEIN Selbstreinigung | Sauger fährt in die Station | clip_a 35–40 |
+| Dreckwasser ins Klo (Ekel-Moment) | Tank ins Klo | IMG_3791 |
+| Preis + Link | Preiskarte 119,99 € (neuer Screenshot) | Screenshot |
 
 ## Bitte vorher prüfen
 
-- **Preis jetzt 119,99 €** – bitte neuen Shop-Screenshot schicken (für die Preiskarte). Falls der Preis nur mit Coupon gilt oder es einen Streichpreis gibt, sehe ich das dort.
-- **Was sind die Krümel?** (Kekse, Müsli, Erde …) – wenn du es sagen willst, z. B. „Kekskrümel überall“.
-- „Saugt und wischt gleichzeitig“ und „putzt sich selbst in der Station“ hast du beim letzten Shark-Video schon gesagt – das passt zum Gerät.
+- **Neuen Shop-Screenshot** schicken (für die Preiskarte, Preisanker und ob Coupon nötig ist).
+- **Variante B:** „So sieht's bei uns nach dem Essen öfter aus“ nur, wenn's stimmt – sonst „So sieht mein Boden gerade aus“.
+- **Variante C:** 199 € nur sagen, wenn du ihn wirklich dafür gekauft hast.
