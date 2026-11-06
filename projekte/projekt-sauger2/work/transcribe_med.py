@@ -3,7 +3,7 @@ from faster_whisper import WhisperModel
 m = WhisperModel("medium", device="cpu", compute_type="int8")
 import numpy as np
 audio = np.fromfile(sys.argv[1], dtype=np.int16).astype(np.float32)/32768
-segs, _ = m.transcribe(audio, language="de", word_timestamps=True, vad_filter=False)
+segs, _ = m.transcribe(audio, language="de", word_timestamps=True, vad_filter=False, beam_size=5)
 out=[]
 for s in segs:
     out.append({"start":round(s.start,2),"end":round(s.end,2),"text":s.text.strip(),

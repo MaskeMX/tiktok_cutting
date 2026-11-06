@@ -13,6 +13,7 @@ Zahlen nach ~48 h eintragen (Views, Ø Wiedergabedauer in %, Verkäufe). Claude 
 | 2026-11-02 | Massagepistole | A `3dinge` | „Nicht kaufen, bevor du DAS weißt“ (3-Punkte-Liste) | 1./2./3.-Einblendungen, Preiskarte | 30 s | | | |
 | 2026-11-02 | Massagepistole | B `gymspielzeug` | Zweifel „nur Gym-Spielzeug?“ + Banane | NEIN/JA, Preiskarte | 26 s | | | |
 | 2026-11-02 | Massagepistole | C `bananenbrei` | Kurioses zuerst (Bananenbrei) | 1./2./3.-Einblendungen, Preiskarte | 30 s | | | |
+| 2026-11-06 | Shark HydroVac (Teil 2) | A `zurueck` | Rücksende-Twist „Darum schick ich ihn zurück“, kein Produktname im Hook | 3× NEIN, „199 € → 119,99 €“, Dreifach-Hook | 28 s | | | |
 
 ## Erkenntnisse
 

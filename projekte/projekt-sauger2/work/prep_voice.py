@@ -37,7 +37,7 @@ def build(name, parts, gap=0.0):
     subprocess.run(cmd, check=True)
     # Kompressor + 2-Pass-Loudnorm auf -14 LUFS / -1.5 dBTP
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", f"work/{name}_cut.wav", "-af",
-                    "highpass=f=80,volume=22dB,acompressor=threshold=-20dB:ratio=4:attack=5:release=120:makeup=3,"
+                    "highpass=f=80,volume=24dB,acompressor=threshold=-20dB:ratio=4:attack=5:release=120:makeup=3,"
                     "alimiter=limit=0.5:level=false", f"work/{name}_comp.wav"], check=True)
     m = subprocess.run(["ffmpeg", "-hide_banner", "-i", f"work/{name}_comp.wav", "-af",
                         "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
@@ -48,17 +48,9 @@ def build(name, parts, gap=0.0):
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", f"work/{name}_comp.wav", "-af", ln,
                     "-ar", "48000", f"voice/{name}.wav"], check=True)
 
-A, C = "voice/A_orig.wav", "voice/CTA_orig.wav"
-sA, sC = silences(A), silences(C)
-
-# Variante A: Nein/Ja-Takt (Pausen auf 0.4 s, Rhythmus bleibt) + Hauptteil + neue CTA (Weihnachten)
-build("A", [
-    piece(A, 0.50, 8.15, sA, 0.40) + piece(A, 8.15, 21.30, sA, 0.15),
-    piece(C, 0.70, 12.00, sC, 0.15),
-], gap=0.25)
-
-# Variante B: "Lappen gegen Shark, drei Runden"
-build("B", [piece(C, 68.55, 99.20, sC, 0.18)])
-for n in ("A", "B"):
-    print(n, subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
-                             f"voice/{n}.wav"], capture_output=True, text=True).stdout.strip())
+T1, T2 = "voice/A_teil1.wav", "voice/A_teil2.wav"
+s1, s2 = silences(T1, "-48dB"), silences(T2, "-48dB")
+# Variante A "Darum schick ich ihn zurück": Aufnahme 4 bis "...vorne sogar Licht hat," + Aufnahme 5 ab "sondern weil ..." (Schluss aus Aufnahme 4 verunglückt)
+build("A", [piece(T1, 1.50, 15.85, s1, 0.15), piece(T2, 0.80, 15.00, s2, 0.15)], gap=0.22)
+print("A", subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                           "voice/A.wav"], capture_output=True, text=True).stdout.strip())
