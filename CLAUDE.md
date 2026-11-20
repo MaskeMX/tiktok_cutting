@@ -161,6 +161,12 @@ Lege `work/` und `out/` an, falls sie fehlen. Rohdateien niemals überschreiben.
 
 ---
 
+## 8b. Material-Übergabe über Google Drive (kein 30-MB-Limit)
+
+- Olli lädt Rohclips/Voice-overs in Google Drive hoch: Ordner **TikTok_Upload** (ID `13jYjuDn0r6Eu3G27HsyLfk0_FeGpi8Qn`) oder **TikTok_Cuts** (ID `1mFYevqN_-L00KHTeCFSF67xkZqnP2MLX`). Beide sind dauerhaft „Jeder mit dem Link: Betrachter“ (Ollis Wunsch).
+- Ablauf: Google-Drive-Connector `search_files` mit `parentId = '<Ordner-ID>'` (auch Unterordner prüfen; bei Bedarf nach `createdTime` suchen) → `bash setup/drive_fetch.sh <FILE_ID> projekte/projekt-<produkt>/raw/<name>.mov`.
+- Hochladen von hier nach Drive geht nur bis 10 MB → fertige Videos weiter im Chat schicken.
+
 ## 9. Lernen: was funktioniert auf TikTok?
 
 - Jeder Schnitt wird in `ergebnisse.md` eingetragen (Produkt, Variante, Hook-Art, Stilmittel).
